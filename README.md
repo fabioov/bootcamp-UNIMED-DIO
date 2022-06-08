@@ -1,2 +1,4 @@
-# bootcamp-UNIMED-DIO
-Documentos e trabalhos realizados no bootcamp
+# ANOTAÇÕES IMPORTANTES SOBRE O CURSO
+
+- Curso bem didático e muito bem montado;
+- 
