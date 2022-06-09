@@ -1,0 +1,367 @@
+body {
+	margin: 0px;
+	padding: opx;
+	background-image: url("Images/dark_fish_skin.png");
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border-bottom-style: dashed;
+}
+
+#header-wrapper {
+	overflow: hidden;
+	width: 800px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header {
+	width: 100%;
+	height: 100px;
+	background-image: url("Images/FS - PNG.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 130px;	
+	background-color: #262626;
+	border-radius: 0 0 .25em .25em;
+}
+
+#linkmenu {
+	width: 100%;
+	height: 70px;
+	float: left;
+}
+
+/*-----Main Body-----*/
+#mainbody {
+	width: 100%;
+	height: auto;
+	float: left;
+	
+}
+
+#bodyheader {
+	width: 60%;
+	height: auto;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+/*-----Header 1-----*/
+
+h1 {
+	font: bold 40px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222;
+	text-shadow: 0 1px 2px #555;
+	text-align: center;
+}
+
+h2 {
+	font: bold 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	color: #D2AE6D;
+}
+
+p {
+	font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+	text-indent: 20px;
+	text-align: left;
+	text-shadow: 0 1px 2px #555;
+	color: #fff;
+	line-height: 30px;
+}
+/*-----Navigation Menu-----*/
+ul {
+	list-style-type: none;
+	overflow: 
+}
+
+#navigation {
+	margin: 10px 0 0 0;	
+	font: bold 12px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #444;
+}
+
+#navigation:after {
+	clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#navigation ul {	
+	float: left;
+	margin-left: -32px;
+    overflow: hidden;
+}
+
+/*---Dropdown Menu Effects---*/
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+/*---End---*/
+
+#navigation ul li ul {
+	display: none;
+}
+
+#navigation ul li:hover ul {
+	list-style-type: none;
+	display: block;
+	position: absolute;
+	-webkit-animation: fadeIn 2.3s;
+    -moz-animation: fadeIn 2.3s;
+    -ms-animation: fadeIn 2.3s;
+    animation: fadeIn 2.3s;
+}
+
+#navigation ul li:hover ul li{
+	float: none;
+	margin-top: 2px;
+	visibility:visible;
+  	opacity:1;
+  	transition-delay:0s;
+}
+
+#navigation li:hover ul li a{
+	display: block;
+	margin-bottom: .5px;
+	-webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+#navigation li {
+	float: left;
+	border-style: solid; 
+	border-width: 1px;
+	box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	border-color: #262626 !important;
+	background: #4D4D4D; /* Old browsers */
+	background: -moz-linear-gradient(top, #4D4D4D 0%, #262626 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4D4D4D), color-stop(100%,#262626)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* IE10+ */
+	background: linear-gradient(top, #4D4D4D 0%,#262626 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4D4D4D', endColorstr='#262626',GradientType=0 ); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */	
+}
+
+#navigation li:hover, #navigation li.current {
+	box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	-webkit-box-shadow: 0 1px rgba(255,255,255,0.2) inset;
+	border-color: #262626 !important;
+	background: #4D4D4D; /* Old browsers */
+	background: -moz-linear-gradient(top, #4D4D4D 0%, #262626 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4D4D4D), color-stop(100%,#262626)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #4D4D4D 0%,#262626 100%); /* IE10+ */
+	background: linear-gradient(top, #4D4D4D 0%,#262626 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4D4D4D', endColorstr='#262626',GradientType=0 ); /* IE6-9 */
+}
+
+#navigation a {
+	display: block;
+	width: 9.5em;
+	text-align: center;
+	padding: 5px 7.5px;
+	color: #D2AE6D;
+	text-decoration: none;
+}
+
+#navigation a:hover, #navigation li.current a {
+	color: #222;
+	text-shadow: 0 1px 2px #555;
+	letter-spacing: 5px;
+	-webkit-transition: 1.0s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+#navigation li:first-child {
+	border-radius: .25em 0 0 .25em;
+}
+
+#navigation li:last-child {
+	border-radius: 0 .25em .25em 0;
+}
+
+/*-----Submenu-----*/
+
+.submenu {
+	margin-left: -9px;
+	float: left;
+}
+
+/*-----Search Box-----*/
+#Search {
+	float: right;
+	clear: both;
+	margin: 20px 10px 10px 0;
+}
+
+
+#search input[type="text"] {
+    background: url(Images/Search.png) no-repeat 10px 6px #444;
+    background-size: 16px;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #D2AE6D;
+    width:150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+    background: url(Images/Search.png) no-repeat 10px 6px #fcfcfc;
+    color: #D2AE6D;
+    width: 200px;
+    background-size: 16px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    outline-color: #D2AE6D;
+}
+
+/*---Style Input Placeholder---*/
+::-webkit-input-placeholder {
+   color: #D2AE6D;
+   opacity: .4;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #D2AE6D; 
+   opacity: .4; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #D2AE6D; 
+   opacity: .4; 
+}
+
+:-ms-input-placeholder {  
+   color: #D2AE6D; 
+   opacity: .4; 
+}
+
+/*---Date and Time---*/
+
+#datetime {
+	float: right;
+	width: 100px;
+	height: 30px;
+	margin: 10px 10px 0 0;
+	padding: 0;
+	font: bold 12px Helvetica, Arial, sans-serif;
+	color: #D2AE6D;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+/*---Contact Page---*/
+#DivForm {
+	float: left;
+	width: 500px;
+	height: auto;
+	margin-right: 15px;
+}
+label {
+	color: #D2AE6D;
+}
+
+
+#submit {
+	color: #D2AE6D;
+	margin: 5px 0 0 0;
+	padding: 0;
+	width: 100px;
+	font: bold 10em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	float: right;
+}
+
+input#name {
+	width: 500px;
+	height: 25px;
+	margin: 10px 0 15px 0;
+	border: solid 2px #D2AE6D;
+	border-radius: .25em;
+	outline-color: #D2AE6D;
+}
+
+input#email {
+	width: 500px;
+	height: 25px;
+	margin: 10px 0 15px 0;
+	border: solid 2px #D2AE6D;
+	border-radius: .25em;
+	outline-color: #D2AE6D;
+}
+
+input#message {
+	width: 500px;
+	height: 170px;
+	margin: 10px 0 15px 0;
+	border: solid 2px #D2AE6D;
+	border-radius: .25em;
+	outline-color: #D2AE6D;
+	padding: 0 0 180px 0;
+}
+
+/*---Div Contact Info---*/
+
+#ContactInfo {
+	width: 285px;
+	height: auto;
+	float: right;
+	text-align: left;
+}
+
+.heading {
+	font: bold 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-left: 15px;
+	padding: 0 5px 0 0;
+	opacity: .7;
+}
+
+
+.ContactPic {
+	float: left;
+	margin-left: -10;
+	margin-bottom: 9px;
+}
+
