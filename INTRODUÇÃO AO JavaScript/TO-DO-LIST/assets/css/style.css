@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    margin-left: 0px;
+    margin-right: 60px;
+    width: 130px;
+
+}
+
+.list ul li {
+    list-style: none;
+    margin-left: -30px;
+    padding: 5px;
+    
+}
