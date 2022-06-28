@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/TO-DO-LIST/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>TO DO LIST</title>
 </head>
 <body>
     <div class="to-do-list"> 
 
         <h1>TO-DO LIST</h1>
-        <input class="addInput"><button id="addBtn" onclick="add()">ADD TASK</button>
-    </div>
+        <input type="text" id="addInput" placeholder="enter task here"><button id="addBtn">ADD TASK</button>
+    
     <div class="list">
-        <ul>
-            <li class="itens">Item 1</li>
-            <li class="itens">Item 2</li>
-            <li class="itens">Item 3</li>
-            <li class="itens">Item 4</li>
-            <li class="itens">Item 5</li>
+        <ul id="myList">
+
+    
+
+
         </ul>
     </div>
+</div>
 
-    <script src="/TO-DO-LIST/assets/scripts/to-do-list.js"></script>
+    <script type="module" src="/TO-DO-LIST/assets/scripts/to-do-list.js"></script>
 </body>
 </html>

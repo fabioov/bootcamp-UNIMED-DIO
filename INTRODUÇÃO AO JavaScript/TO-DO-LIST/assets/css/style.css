@@ -1,20 +1,75 @@
 body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #F0EBE3;
 }
 
+.to-do-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 60%;
+    height: 80%;
+    background-color: #7D9D9C;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+}
 .list {
     margin-left: 0px;
     margin-right: 60px;
     width: 130px;
+    height: 300px;
+    text-align: left;
+}
 
+lu {
+    list-style-position: inside;
+    text-align: center;
 }
 
 .list ul li {
-    list-style: none;
-    margin-left: -30px;
-    padding: 5px;
     
+    list-style: disc;
+    letter-spacing: 3px;
+    color: white;
+    padding: 5px;
+    margin: 5px 5px 5px -35px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+
+#addInput {
+width: 200px;
+height: 40px;
+border-radius: 5px;
+font-family: "Roboto", sans-serif;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    background: #F0EBE3;
+}
+
+#addBtn {
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    padding: 13px;
+    border-radius: 30px;
+    background: green;
+    color: white;
+    font-size: 20px;
 }
